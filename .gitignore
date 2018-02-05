@@ -12,7 +12,6 @@ executeLog*
 *.class
 productionLog
 *~
-.gradle
 
 !/intermine/webservice/client/download/dist/
 
@@ -205,4 +204,6 @@ apache-tomcat*
 prefixed
 failures.list
 *.jks
-biotestmine/project.xml
+*.iml
+out/
+.gradle/
