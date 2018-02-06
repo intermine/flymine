@@ -1,6 +1,5 @@
 <project type="bio">
   <property name="target.model" value="genomic"/>
-  <property name="source.location" location="../bio/sources/"/>
   <property name="common.os.prefix" value="common"/>
   <property name="intermine.properties.file" value="flymine.properties"/>
   <property name="default.intermine.properties.file" location="../default.intermine.integrate.properties"/>
@@ -120,11 +119,13 @@
     <source name="flybase-alleles" type="flybase-alleles">
       <property name="src.data.dir" location="/micklem/data/flybase/alleles/current"/>
     </source>
+<!--
     <source name="anoph-expr" type="anoph-expr">
       <property name="src.data.dir" location="/micklem/data/flymine/anoph-expr"/>
       <property name="src.data.dir.includes" value="E-TABM-186-processed-data-1343527732.txt"/>
       <property name="geneFile" value="/micklem/data/flymine/anoph-expr/reporter_gene_mappingFile.txt"/>
     </source>
+-->
 <!--
     <source name="anoest" type="anoest">
       <property name="dataSourceName" value="VectorBase"/>
