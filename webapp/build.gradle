@@ -17,7 +17,7 @@ dependencies {
     compile (project(":dbmodel")) {transitive = false}
     compile group: "org.intermine", name: "bio-core", version: imVersion
     compile group: "org.intermine", name: "intermine-api", version: imVersion
-    compile group: "org.intermine", name: "intermine-web", version: imVersion
+    compile group: "org.intermine", name: "intermine-webapp", version: imVersion, classifier: "classes"
     compile group: "org.intermine", name: "intermine-webtasks", version: imVersion
     compile group: "javax.servlet", name: "jstl", version: "1.2"
     compile group: "taglibs", name: "standard", version: "1.1.2"
