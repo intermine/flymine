@@ -12,6 +12,7 @@ executeLog*
 *.class
 productionLog
 *~
+*.cache
 
 !/intermine/webservice/client/download/dist/
 
