@@ -34,7 +34,7 @@ dbModelConfig {
 mineDBModelConfig {
     modelName = "genomic"
     extraModelsStart = "so_additions.xml genomic_additions.xml"
-    extraModelsEnd = "flybase-chado-db_additions.xml"
+    extraModelsEnd = "flybase-chado-db_additions.xml chado-db-stock_additions.xml"
 }
 
 
