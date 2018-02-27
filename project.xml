@@ -101,6 +101,7 @@
      <property name="src.data.dir" location="/micklem/data/interpro/match_complete/current"/>
      <property name="src.data.dir.includes" value="protein2ipr.dat"/>
      <property name="protein2ipr.organisms" value="7227"/>
+     <property name="osAlias" value="os.production"/>
     </source>
 
     <source name="omim" type="omim">
@@ -143,7 +144,7 @@
       <property name="src.data.file" location="/micklem/data/psi/ontology/current/psi-mi.obo"/>
     </source>
     <source name="so" type="so">
-      <property name="src.data.file" location="../../bio/sources/so/so.obo"/>
+      <property name="src.data.file" location="so.obo"/>
     </source>
     <source name="go" type="go">
       <property name="src.data.file" location="/micklem/data/go-annotation/current/go.obo"/>
