@@ -147,7 +147,7 @@
       <property name="src.data.file" location="so.obo"/>
     </source>
     <source name="go" type="go">
-      <property name="src.data.file" location="/tmp/go-basic.obo"/>
+      <property name="src.data.file" location="/micklem/data/go-annotation/current/go-basic.obo"/>
     </source>
     <source name="go-annotation" type="go-annotation">
       <property name="src.data.dir" location="/micklem/data/go-annotation/flymine"/>
