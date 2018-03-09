@@ -147,7 +147,7 @@
       <property name="src.data.file" location="so.obo"/>
     </source>
     <source name="go" type="go">
-      <property name="src.data.file" location="/micklem/data/go-annotation/current/go.obo"/>
+      <property name="src.data.file" location="/tmp/go-basic.obo"/>
     </source>
     <source name="go-annotation" type="go-annotation">
       <property name="src.data.dir" location="/micklem/data/go-annotation/flymine"/>
@@ -156,8 +156,8 @@
     
     <source name="flybase-expression" type="flybase-expression">
       <property name="src.data.dir" location="/micklem/data/modMine_flyRNAseq/current"/>
-      <property name="flybaseExpressionLevelsFile" location="/micklem/data/modMine_flyRNAseq/BinLOOKUP_modENCODE_FlyAtlas.txt"/>
-      <property name="flybaseStagesFile" location="/micklem/data/modMine_flyRNAseq/stages.txt"/>
+      <property name="flybaseExpressionLevelsFile" value="/micklem/data/modMine_flyRNAseq/BinLOOKUP_modENCODE_FlyAtlas.txt"/>
+      <property name="flybaseStagesFile" value="/micklem/data/modMine_flyRNAseq/stages.txt"/>
     </source>
 
     <source name="flyreg" type="flyreg">
@@ -514,7 +514,6 @@
       <property name="src.data.dir" location="/micklem/data/pubmed/current"/>
       <property name="pubmed.organisms" value="7227 7165 6239 7240 7244 7245 7217 7220 7222 7234 7238 46245"/>
       <property name="src.data.dir.includes" value="gene2pubmed"/>
-      <property name="infoFile" location="/micklem/data/pubmed/current/gene_info"/>
     </source>
 
     <source name="interpro-go" type="interpro-go">
@@ -590,19 +589,19 @@
     </source>
 
     <source name="entrez-organism" type="entrez-organism">
-      <property name="src.data.file" location="build/organisms.xml"/>
+      <property name="src.data.file" location="organisms.xml"/>
     </source>
 
     <source name="flymine-static" type="intermine-items-xml-file">
       <property name="src.data.file" location="datasets.xml"/>
     </source>
     <source name="update-data-sources" type="update-data-sources">
-      <property name="src.data.file" location="build/datasources.xml"/>
+      <property name="src.data.file" location="datasources.xml"/>
       <property name="dataSourceFile" value="/micklem/data/uniprot/xrefs/current/dbxref.txt"/>
     </source>
 
    <source name="update-publications" type="update-publications">
-      <property name="src.data.file" location="build/publications.xml"/>
+      <property name="src.data.file" location="publications.xml"/>
       <property name="loadFullRecord" value="true"/>
     </source>
   </sources>
