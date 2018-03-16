@@ -150,7 +150,7 @@
       <property name="src.data.file" location="/micklem/data/go-annotation/current/go-basic.obo"/>
     </source>
     <source name="go-annotation" type="go-annotation">
-      <property name="src.data.dir" location="/micklem/data/go-annotation/flymine"/>
+      <property name="src.data.dir" location="/micklem/data/go-annotation/flymine/flybase"/>
       <property name="ontologyPrefix" value="GO"/>
     </source>
     
