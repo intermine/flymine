@@ -97,7 +97,7 @@
     </source>
 
 <!-- has to be after UniProt because only loads protein domains for loaded proteins -->
-    <source name="protein2ipr" type="protein2ipr" dump="true">
+    <source name="protein2ipr" type="protein2ipr">
      <property name="src.data.dir" location="/micklem/data/interpro/match_complete/current"/>
      <property name="src.data.dir.includes" value="protein2ipr.dat"/>
      <property name="protein2ipr.organisms" value="7227"/>
@@ -554,7 +554,7 @@
       <property name="src.data.dir.includes" value="v5.gff.drosophila_melanogaster.gff"/>
     </source>
 
-    <source name="psi-intact" type="psi" dump="true">
+    <source name="psi-intact" type="psi">
       <property name="src.data.dir" location="/micklem/data/psi/intact/current"/>
       <property name="intact.organisms" value="7227 46245 7240 7244 7245 4932"/>
     </source>
@@ -602,7 +602,7 @@
       <property name="dataSourceFile" value="/micklem/data/uniprot/xrefs/current/dbxref.txt"/>
     </source>
 
-   <source name="update-publications" type="update-publications">
+   <source name="update-publications" type="update-publications" dump="true">
       <property name="src.data.file" location="publications.xml"/>
       <property name="loadFullRecord" value="true"/>
     </source>
@@ -611,7 +611,6 @@
   <post-processing>
 
     <post-process name="create-utr-references"/>
-    <post-process name="populate-located-features"/>
     <post-process name="create-references" />
     <post-process name="make-spanning-locations"/>
     <post-process name="create-chromosome-locations-and-lengths"/>
