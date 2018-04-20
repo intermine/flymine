@@ -616,7 +616,7 @@
     <post-process name="create-chromosome-locations-and-lengths"/>
     <post-process name="create-intergenic-region-features"/>
     <post-process name="transfer-sequences"/>
-    <post-process name="populate-child-features"/>
+<!--    <post-process name="populate-child-features"/> -->
     <post-process name="do-sources" />
     <post-process name="create-location-overlap-index"/>
     <post-process name="create-overlap-view" />
