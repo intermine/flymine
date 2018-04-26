@@ -51,13 +51,13 @@
     <!-- uniprot must be processed immediately after chado -->
     <source name="uniprot" type="uniprot">
       <!--<property name="uniprot.organisms" value="7227 6239 7165 9606 10090 10116 46245 7230 7240 7244 7245 7217 7220 7222 7234 7260 7238 559292"/>-->
-      <property name="uniprot.organisms" value="7227 6239 7165 9606 10090 10116 46245 7230 7244 7217 7220 7222 7238 559292"/>
+      <property name="uniprot.organisms" value="7227 6239 9606 10090 10116 46245 7230 7244 7217 7220 7222 7238 559292"/>
       <property name="src.data.dir" location="/micklem/data/uniprot/current"/>
     </source>
 
     <source name="uniprot-fasta" type="fasta">
      <!-- <property name="fasta.taxonId" value="7227 6239 7165 4932 9606 10090 10116 46245 7230 7240 7244 7245 7217 7220 7222 7234 7260 7238"/>-->
-      <property name="fasta.taxonId" value="7227 6239 7165 4932 9606 10090 10116 46245 7230 7244 7217 7220 7222 7238"/>
+      <property name="fasta.taxonId" value="7227 6239 4932 9606 10090 10116 46245 7230 7244 7217 7220 7222 7238"/>
       <property name="fasta.className" value="org.intermine.model.bio.Protein"/>
       <property name="fasta.classAttribute" value="primaryAccession"/>
       <property name="fasta.dataSetTitle" value="UniProt data set"/>
@@ -120,20 +120,6 @@
     <source name="flybase-alleles" type="flybase-alleles">
       <property name="src.data.dir" location="/micklem/data/flybase/alleles/current"/>
     </source>
-<!--
-    <source name="anoph-expr" type="anoph-expr">
-      <property name="src.data.dir" location="/micklem/data/flymine/anoph-expr"/>
-      <property name="src.data.dir.includes" value="E-TABM-186-processed-data-1343527732.txt"/>
-      <property name="geneFile" value="/micklem/data/flymine/anoph-expr/reporter_gene_mappingFile.txt"/>
-    </source>
--->
-<!--
-    <source name="anoest" type="anoest">
-      <property name="dataSourceName" value="VectorBase"/>
-      <property name="dataSetTitle" value="AnoEST clusters"/>
-      <property name="source.db.name" value="anoest"/>
-    </source>
--->
 <!--
     <source name="pdb" type="pdb">
       <property name="src.data.dir" location="/micklem/data/pdb/current"/>
@@ -516,7 +502,7 @@
     </source>
     <source name="pubmed-gene" type="pubmed-gene">
       <property name="src.data.dir" location="/micklem/data/pubmed/current"/>
-      <property name="pubmed.organisms" value="7227 7165 6239 7240 7244 7245 7217 7220 7222 7234 7238 46245"/>
+      <property name="pubmed.organisms" value="7227 6239 7240 7244 7245 7217 7220 7222 7234 7238 46245"/>
       <property name="src.data.dir.includes" value="gene2pubmed"/>
     </source>
 

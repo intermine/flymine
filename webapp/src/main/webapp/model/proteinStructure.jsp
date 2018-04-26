@@ -61,15 +61,6 @@
           </li>
 
           <li>
-            <im:querylink text="All 3-D protein structure data for <i>A. gambiae</i> (Kenji Mizuguchi data) " skipBuilder="true">
-<query name="" model="genomic" view="Protein.primaryIdentifier Protein.primaryAccession Protein.structures.identifier Protein.structures.start Protein.structures.end" sortOrder="Protein.primaryAccession asc" constraintLogic="A and B">
-  <constraint path="Protein.organism.name" code="A" op="=" value="Anopheles gambiae"/>
-  <constraint path="Protein.structures.dataSets.name" code="B" op="=" value="Mizuguchi protein structure predictions"/>
-</query>
-            </im:querylink>
-          </li>
-
-          <li>
             <im:querylink text="All 3-D protein structure data for <i>D. melanogaster</i> (Kenji Mizuguchi data) " skipBuilder="true">
 <query name="" model="genomic" view="Protein.primaryIdentifier Protein.primaryAccession Protein.structures.identifier Protein.structures.start Protein.structures.end" sortOrder="Protein.primaryAccession asc" constraintLogic="A and B">
   <constraint path="Protein.organism.name" code="A" op="=" value="Drosophila melanogaster"/>

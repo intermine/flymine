@@ -27,8 +27,7 @@
 
         <div id="hiddenDiv1" class="dataSetDescription">
           <p>
-            <a href="/">FlyMine</a> is a resource aimed at the <i>Drosophila</i> and
-            <i>Anopheles</i> research communities hence the focus is on those organisms.
+            <a href="/">FlyMine</a> is a resource aimed at the <i>Drosophila</i> research communities hence the focus is on those organisms.
           </p>
          <ul>
          <li>
@@ -66,20 +65,7 @@
 
         </div>
 
-        <h4>
-          <a href="javascript:toggleDiv('hiddenDiv3');">
-            <img id='hiddenDiv3Toggle' src="images/disclosed.gif" title="Click here to view more datasets"/>
-            EST data sets ...
-          </a>
-        </h4>
 
-        <div id="hiddenDiv3" class="dataSetDescription">
-          <dl>
-            <ul><li><i>Anopheles gambiae</i> - Clustered EST data set version 8.0 from the
-              <a href="http://web.bioinformatics.ic.ac.uk/vectorbase/AnoEST.v8/index.php/" target="_new">Imperial College London Centre for Bioinformatics</a>.
-            </dt>
-          </li></ul>
-        </div>
       </div>
    </td>
 
@@ -116,44 +102,6 @@
 </query>
             </im:querylink>
           </li>
-
-          <li>
-            <im:querylink text="All <i>Anopheles gambiae</i> gene identifiers and chromosomal positions " skipBuilder="true">
-<query name="" model="genomic" view="Gene.primaryIdentifier Gene.secondaryIdentifier Gene.chromosome.primaryIdentifier Gene.chromosomeLocation.start Gene.chromosomeLocation.end" sortOrder="Gene.primaryIdentifier asc">
-  <node path="Gene" type="Gene">
-  </node>
-  <node path="Gene.organism" type="Organism">
-  </node>
-  <node path="Gene.organism.name" type="String">
-    <constraint op="=" value="Anopheles gambiae" description="" identifier="" code="A">
-    </constraint>
-  </node>
-</query>
-            </im:querylink>
-          </li>
-
-
-          <li>
-            <im:querylink text="All <i>Anopheles gambiae</i> EST clusters and chromosomal positions" skipBuilder="true">
-              <query name="" model="genomic" view="OverlappingESTSet.primaryIdentifier OverlappingESTSet.length OverlappingESTSet.chromosome.primaryIdentifier OverlappingESTSet.chromosomeLocation.start OverlappingESTSet.chromosomeLocation.end">
-                <pathDescription pathString="OverlappingESTSet.chromosomeLocation" description="Chromosome location">
-                </pathDescription>
-                <pathDescription pathString="OverlappingESTSet.chromosome" description="Chromosome">
-                </pathDescription>
-                <pathDescription pathString="OverlappingESTSet" description="EST cluster">
-                </pathDescription>
-                <node path="OverlappingESTSet" type="OverlappingESTSet">
-                </node>
-                <node path="OverlappingESTSet.organism" type="Organism">
-                </node>
-                <node path="OverlappingESTSet.organism.name" type="String">
-                  <constraint op="=" value="Anopheles gambiae" description="" identifier="" code="A">
-                  </constraint>
-                </node>
-              </query>
-            </im:querylink>
-          </li>
-
 
         </ul>
       </div>

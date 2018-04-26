@@ -24,7 +24,6 @@
 
           <ul>
               <li><i>D. melanogaster</i></li>
-              <li><i>A. gambiae</i></li>
               <li><i>C. elegans</i></li>
               <li><i>H. sapiens</i></li>
               <li><i>M. musculus</i></li>
@@ -106,42 +105,6 @@
 </query>
       </im:querylink>
       </li>
-        </ul>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="40%" valign="top">
-      <div class="heading2">
-        Bulk download <i>Anopheles</i> data
-      </div>
-      <div class="body">
-        <ul>
-          <li>
-              <im:querylink text="<i>A. gambiae</i> proteins and corresponding genes " skipBuilder="true">
-<query name="" model="genomic" view="Protein.name Protein.primaryAccession Protein.primaryIdentifier Protein.genes.secondaryIdentifier Protein.genes.symbol" sortOrder="Protein.name asc">
-  <constraint path="Protein.genes.organism.name" op="=" value="Anopheles gambiae"/>
-</query>
-</im:querylink>
-          </li>
-
-          <li>
-              <im:querylink text="<i>A. gambiae</i> protein domains " skipBuilder="true">
-<query name="" model="genomic" view="ProteinDomain.primaryIdentifier ProteinDomain.name ProteinDomain.shortName ProteinDomain.type" sortOrder="ProteinDomain.primaryIdentifier asc">
-  <constraint path="ProteinDomain.proteins.organism.name" op="=" value="Anopheles gambiae"/>
-</query>
-              </im:querylink>
-          </li>
-
-          <li>
-              <im:querylink text="<i>A. gambiae</i> proteins with corresponding protein domains " skipBuilder="true">
-<query name="" model="genomic" view="ProteinDomain.proteins.primaryAccession ProteinDomain.proteins.primaryIdentifier ProteinDomain.name ProteinDomain.shortName ProteinDomain.type" sortOrder="ProteinDomain.proteins.primaryAccession asc ProteinDomain.proteins.primaryAccession asc">
-  <constraint path="ProteinDomain.proteins.organism.name" op="=" value="Anopheles gambiae"/>
-</query>
-      </im:querylink>
-          </li>
-
         </ul>
       </div>
     </td>

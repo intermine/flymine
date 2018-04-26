@@ -146,14 +146,6 @@
             </im:querylink>
           </li>
 
-          <li>
-            <im:querylink text="All results from Koutsos et al for <i>A. gambiae</i> genes " skipBuilder="true">
-<query name="" model="genomic" view="Gene.primaryIdentifier Gene.microArrayResults.value Gene.microArrayResults.standardError Gene.microArrayResults.type Gene.microArrayResults.assays.name" sortOrder="Gene.primaryIdentifier asc Gene.primaryIdentifier asc" constraintLogic="A and B">
-  <constraint path="Gene.organism.name" code="A" op="=" value="Anopheles gambiae"/>
-  <constraint path="Gene.microArrayResults" type="AGambiaeLifeCycle"/>
-</query>
-            </im:querylink>
-          </li>
         </ul>
       </div>
     </td>
