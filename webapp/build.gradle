@@ -75,7 +75,7 @@ cargo {
     containerId = 'tomcat8x'
     //port = 8080
 
-    // change this to the Tomcat root of your choice (no need if you're using Apache in front)
+    // change this to the Tomcat root of your choice
     deployable {
         context = props.getProperty("webapp.path")
     }
@@ -100,8 +100,11 @@ cargo {
     // local deployment - copies files to Tomcat rather than using Tomcat manager
     local {
         homeDir = file('/local-homes/julie/apache-tomcat-8.5.20')
-        //outputFile = file('build/output.log')
-        timeout = 60000
+        outputFile = file('/local-homes/julie/apache-tomcat-8.5.20/output.log')
+        configHomeDir = file('/local-homes/julie/apache-tomcat-8.5.20')
+//        containerProperties {
+//            property 'cargo.tomcat.ajp.port', 9099
+//        }
     }
 
 }
