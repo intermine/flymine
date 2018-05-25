@@ -101,12 +101,7 @@ cargo {
     local {
         homeDir = file('/local-homes/julie/apache-tomcat-8.5.20')
         outputFile = file('/local-homes/julie/apache-tomcat-8.5.20/output.log')
-        configHomeDir = file('/local-homes/julie/apache-tomcat-8.5.20')
-//        containerProperties {
-//            property 'cargo.tomcat.ajp.port', 9099
-//        }
     }
-
 }
 
 cargoStartLocal.dependsOn war
@@ -115,6 +110,7 @@ cargoRedeployLocal.dependsOn war
 cargoDeployRemote.dependsOn war
 cargoRedeployRemote.dependsOn war
 
+// gets the hostname from the old intermine parameter, e.g. http://localhost:8080 > localhost
 String getServerName(String deployUrl) {
     // chop off protocol
     if (deployUrl.contains("//")) {
@@ -141,5 +137,6 @@ task blueGenesStart(type: JavaExec) {
     environment("bluegenes-default-service-root", props.getProperty("webapp.baseurl") + "/" + props.getProperty("webapp.path"))
     // FlyMine Beta
     environment("bluegenes-default-mine-name", props.getProperty("project.title"))
+    // change this
     environment("bluegenes-jar-version", System.getProperty("blueGenesVersion"))
 }
