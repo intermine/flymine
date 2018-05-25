@@ -73,7 +73,7 @@ cargo {
 
     // change this to match your Tomcat major version (keep the x)
     containerId = 'tomcat8x'
-    port = 8080
+    //port = 8080
 
     // change this to the Tomcat root of your choice (no need if you're using Apache in front)
     deployable {
@@ -102,13 +102,15 @@ cargo {
         homeDir = file('/local-homes/julie/apache-tomcat-8.5.20')
         //outputFile = file('build/output.log')
         timeout = 60000
-
-        containerProperties {
-            property 'cargo.tomcat.ajp.port', 8080
-        }
     }
 
 }
+
+cargoStartLocal.dependsOn war
+cargoRunLocal.dependsOn war
+cargoRedeployLocal.dependsOn war
+cargoDeployRemote.dependsOn war
+cargoRedeployRemote.dependsOn war
 
 String getServerName(String deployUrl) {
     // chop off protocol
