@@ -107,13 +107,13 @@ cargoRedeployRemote.dependsOn war
 // gets the hostname from the old intermine parameter, e.g. http://localhost:8080 > localhost
 String getServerName(String deployUrl) {
     // chop off protocol
-    if (deployUrl.contains("//")) {
+    if (deployUrl != null && deployUrl.indexOf("/") >= 0) {
         // https:// or http://
         deployUrl = deployUrl.substring(deployUrl.indexOf("/") + 2, deployUrl.length())
     }
 
     // chop off port
-    if (deployUrl.contains(":")) {
+    if (deployUrl != null && deployUrl.contains(":")) {
         // localhost:8080
         String[] bits = deployUrl.split(":")
         deployUrl = bits[0]
