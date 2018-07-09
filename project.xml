@@ -585,7 +585,7 @@
     </source>
 
     <source name="flymine-static" type="flymine-static">
-      <property name="src.data.file" location="/micklem/data/flymine/datasets.xml"/>
+      <property name="src.data.file" location="/micklem/data/flymine/datasets/current/datasets.xml"/>
     </source>
     <source name="update-data-sources" type="update-data-sources">
       <property name="src.data.file" location="datasources.xml"/>
