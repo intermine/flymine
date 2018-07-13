@@ -73,7 +73,10 @@ cargo {
 
     // change this to match your Tomcat major version (keep the x)
     containerId = 'tomcat8x'
-    //port = 8080
+    int remotePort = 8080
+    if (props.getProperty("webapp.port") != null) {
+        remotePort = props.getProperty("webapp.port").toInteger()
+    }
 
     // change this to the Tomcat root of your choice
     deployable {
@@ -83,7 +86,7 @@ cargo {
     def remoteHostName = "localhost"
 
     // if "hostname" is defined in properties file, use that
-    if (props.hasProperty("webapp.hostname")) {
+    if (props.getProperty("webapp.hostname") != null) {
         remoteHostName = props.getProperty("webapp.hostname")
     } else {
         remoteHostName = getServerName(props.getProperty("webapp.deploy.url"))
@@ -95,6 +98,7 @@ cargo {
         protocol = "http"
         username = props.getProperty("webapp.manager")
         password = props.getProperty("webapp.password")
+        port = remotePort
     }
 }
 
