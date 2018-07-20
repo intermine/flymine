@@ -35,10 +35,6 @@ subprojects {
     }
   }
 
-  test {
-    ignoreFailures = true
-  }
-
   dependencies {
     compile group: "org.intermine", name: "intermine-resources", version: System.getProperty("imVersion")
     compile('ant:ant:1.6.5')

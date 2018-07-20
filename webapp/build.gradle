@@ -92,10 +92,17 @@ cargo {
         remoteHostName = getServerName(props.getProperty("webapp.deploy.url"))
     }
 
+    def remoteProtocol = "http"
+
+    // if "protocol" is defined in properties file, use that
+    if (props.getProperty("webapp.protocol") != null) {
+        remoteProtocol = props.getProperty("webapp.protocol")
+    }
+
     // change these to match your Tomcat host and tomcat-users config
     remote {
         hostname = remoteHostName
-        protocol = "http"
+        protocol = remoteProtocol
         username = props.getProperty("webapp.manager")
         password = props.getProperty("webapp.password")
         port = remotePort
