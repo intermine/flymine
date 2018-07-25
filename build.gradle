@@ -33,6 +33,7 @@ subprojects {
     maven {
         url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
     }
+    maven { url 'https://clojars.org/repo' }
   }
 
   dependencies {
