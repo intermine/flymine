@@ -179,7 +179,7 @@
   </tr>
 
   <tr>
-    <td rowspan="6" class="leftcol"><p><h2>Expression</h2></p></td>
+    <td rowspan="5" class="leftcol"><p><h2>Expression</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
     <td> Microarray-based gene expression data for the life cycle of D. melanogaster</td>
     <td> <a href="http://www.ebi.ac.uk/arrayexpress" target="_new" class="extlink"> ArrayExpress </a> - Experiment E-FLYC-6</td>
@@ -219,15 +219,6 @@
     <td> &nbsp;</td>
   </tr>
 
-<!--
-  <tr>
-    <td> <i>A. gambiae</i> </td>
-    <td> Microarray-based gene expression data for the life cycle of A. gambiae</td>
-    <td> <a href="http://www.ebi.ac.uk/arrayexpress" target="_new" class="extlink"> ArrayExpress </a> - Experiment E-TABM-186</td>
-    <td> Koutsos et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/ 17563388" target="_new" class="extlink">PubMed: 17563388</a></td>
-    <td> &nbsp;</td>
-  </tr>
--->
   <tr>
     <td rowspan="3" class="leftcol"><p><h2>Regulation</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
@@ -370,8 +361,6 @@
 <div class="body">
 <ol>
   <li><a name="note1">${note1}</a></li>
-  <li><a name="note2">${note2}</a></li>
-  <li><a name="note3">${note3}</a></li>
 </ol>
 </div>
 
