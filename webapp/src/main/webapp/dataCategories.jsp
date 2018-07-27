@@ -34,7 +34,7 @@
 
 
   <tr>
-    <td rowspan="3"  class="leftcol"><p><h2>Homology</h2></p></td>
+    <td rowspan="4"  class="leftcol"><p><h2>Homology</h2></p></td>
     <td><i>Drosophila</i></td>
     <td>Orthologues and paralogues between the 12 <i>Drosophila</i> genomes.</td>
     <td><a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2018_03</td>
@@ -75,7 +75,6 @@
   </tr>
 
   <tr>
-    <td rowspan="2"  class="leftcol"><p><h2>Proteins</h2></p></td>
     <td>
         <p><i>Drosophila</i></p>
         <p><i>C. elegans</i></p>
@@ -84,7 +83,7 @@
         <p><i>R. norvegicus</i></p>
         <p><i>S. cerevisiae</i></p>
     </td>
-<td>Orthologue and paralogue relationships between these organisms</td>
+    <td>Orthologue and paralogue relationships between these organisms</td>
     <td><a href="https://www.ncbi.nlm.nih.gov/homologene" target="_new" class="extlink">Homologene</a> - 14th June 2018</td>
     <td>Agarwala et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/26615191" target="_new" class="extlink">PubMed: 26615191</a></td>
     <td> &nbsp; </td>
@@ -120,7 +119,7 @@
     <td> &nbsp;</td>
   </tr>
   
--->
+
  <!--
   <tr>
     <td> <i>D. melanogaster</i> </td>
