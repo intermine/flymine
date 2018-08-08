@@ -91,6 +91,7 @@
       <property name="gff3.taxonId" value="7227"/>
       <property name="gff3.seqClsName" value="MRNA"/>
       <property name="src.data.dir" location="/micklem/data/flymine/long-oligo"/>
+      <property name="gff3.dataSetTitle" value="INDAC long oligo data set"/>
     </source>
     <source name="interpro" type="interpro">
       <property name="src.data.dir" location="/micklem/data/interpro/current"/>
@@ -533,6 +534,7 @@
     <source name="drosdel-gff" type="drosdel-gff">
       <property name="gff3.taxonId" value="7227"/>
       <property name="gff3.seqClsName" value="Chromosome"/>
+      <property name="gff3.dataSetTitle" value="Artificial deletions from the Drosdel project"/>
       <property name="src.data.dir"
                 location="/micklem/data/flymine/drosdel/2008-03-19/chromosome_structure_variations/"/>
     </source>
@@ -542,6 +544,7 @@
       <property name="gff3.taxonId" value="7227"/>
       <property name="src.data.dir" location="/micklem/data/flymine/mirna/miranda/current"/>
       <property name="src.data.dir.includes" value="v5.gff.drosophila_melanogaster.gff"/>
+      <property name="gff3.dataSetTitle" value="miRBase Targets"/>
     </source>
 
     <source name="psi-intact" type="psi">
