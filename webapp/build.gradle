@@ -143,4 +143,7 @@ task blueGenesStart(type: JavaExec) {
     // FlyMine Beta
     environment("bluegenes-default-mine-name", props.getProperty("project.title"))
     environment("bluegenes-jar-version", System.getProperty("blueGenesVersion"))
+    // absolute path to npm tools, e.g. /intermine/tools/node_modules/
+    environment("bluegenes-tool-path", props.getProperty("bluegenes.toolLocation"))
+    println "Loading tools from " + props.getProperty("bluegenes.toolLocation")
 }
