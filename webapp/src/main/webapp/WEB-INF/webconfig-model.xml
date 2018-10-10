@@ -911,7 +911,7 @@
                                  views="secondaryIdentifier,symbol,primaryIdentifier,organism.name,
                                        goAnnotation.ontologyTerm.identifier, goAnnotation.ontologyTerm.name,
                                        goAnnotation.ontologyTerm.parents.identifier,goAnnotation.ontologyTerm.parents.name"
-                                 externalLink="http://amigo.geneontology.org/cgi-bin/amigo/term_details?term="
+                                 externalLink="http://amigo.geneontology.org/amigo/term/"
                                  correctionCoefficient="org.intermine.bio.web.widget.GeneLengthCorrectionCoefficient"/>
 
       <enrichmentwidgetdisplayer id="prot_dom_enrichment_for_gene"
