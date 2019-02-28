@@ -355,6 +355,7 @@
     <source name="drosdel-gff" type="drosdel-gff" version="2.0.0">
       <property name="gff3.taxonId" value="7227"/>
       <property name="gff3.seqClsName" value="Chromosome"/>
+      <property name="reactome.datasourcename" value="Reactome"/>
       <property name="gff3.dataSetTitle" value="Artificial deletions from the Drosdel project"/>
       <property name="src.data.dir"
                 location="/micklem/data/flymine/drosdel/2008-03-19/chromosome_structure_variations/"/>
