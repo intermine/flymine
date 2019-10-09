@@ -1,0 +1,155 @@
+apply plugin: "war"
+apply from: "https://raw.githubusercontent.com/akhikhl/gretty/master/pluginScripts/gretty.plugin"
+apply plugin: "webapp"
+apply plugin: "com.bmuschko.cargo"
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src/main/java"]
+        }
+        resources {
+            srcDirs = ["src/main/resources"]
+        }
+    }
+}
+
+configurations {
+    onlyRunTime
+    webservices
+}
+
+def explodedWebAppDir = "$buildDir/explodedWebApp"
+def mergePropsDir = "$buildDir/props"
+
+dependencies {
+    compile (project(":dbmodel")) {transitive = false}
+    compile group: "org.intermine", name: "bio-core", version: System.getProperty("bioVersion"), transitive: false
+    compile group: "org.intermine", name: "bio-webcore", version: System.getProperty("imVersion"), transitive: false //otherwise bio-model will be included in the classpath 
+    compile group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")
+    compile group: "org.intermine", name: "intermine-webcore", version: System.getProperty("imVersion"), classifier: "classes"
+    webservices group: "org.intermine", name: "bio-webservices", version: System.getProperty("imVersion"),  transitive: false
+    onlyRunTime group: 'org.intermine', name: 'bluegenes', version: System.getProperty("blueGenesVersion")
+}
+
+task unwarWebServices(type: Copy) {
+    description "Unwar intermine-webservices under the build/explodedWebAppDir directory"
+    from { zipTree(configurations.webservices.singleFile) }
+    destinationDir = new File("$explodedWebAppDir")
+}
+
+war {
+    dependsOn 'mergeProperties', 'summariseObjectStore', 'unwarWebServices', 'mergeWebFiles'
+    finalizedBy 'warWebApp'
+}
+
+task warWebApp(type: War) {
+    dependsOn 'copyWebappContent'
+    description "Create the war from the build/explodedWebAppDir directory"
+    from "${explodedWebAppDir}"
+    exclude "WEB-INF/web.properties"
+    webInf { from "${mergePropsDir}" }
+}
+
+// read in mine.properties to get the contextPath
+def props = new Properties()
+file(minePropertyFile).withInputStream { props.load(it) }
+
+gretty {
+    jvmArgs = ['-Dorg.apache.el.parser.SKIP_IDENTIFIER_CHECK=true']
+    contextPath = props.getProperty("webapp.path")
+}
+
+webappConfig {
+    mineName = "flymine"
+    objectStoreName = "os.production"
+    userProfileObjectStoreName = "os.userprofile-production"
+    userProfileObjectStoreWriterName = "osw.userprofile-production"
+    defaultInterminePropertiesFile = "default.intermine.production.properties"
+    propsDir = "$mergePropsDir"
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Use cargo to deploy the webapp to an existing Tomcat instance, either via the HTTP Tomcat manager or local file copy.
+// ---------------------------------------------------------------------------------------------------------------------
+cargo {
+
+    // change this to match your Tomcat major version (keep the x)
+    containerId = 'tomcat8x'
+    int remotePort = 8080
+    if (props.getProperty("webapp.port") != null) {
+        remotePort = props.getProperty("webapp.port").toInteger()
+    }
+
+    // change this to the Tomcat root of your choice
+    deployable {
+        //Tomcat supports nested context paths.
+        //e.g. biotestmine#service.war will be made available under the biotestmine/service context
+        //if we put the hash character the TomcatManager fails, so for now leave the slash
+        context = props.getProperty("webapp.path") + "/service"
+    }
+
+    def remoteHostName = "localhost"
+
+    // if "hostname" is defined in properties file, use that
+    if (props.getProperty("webapp.hostname") != null) {
+        remoteHostName = props.getProperty("webapp.hostname")
+    } else {
+        remoteHostName = getServerName(props.getProperty("webapp.deploy.url"))
+    }
+
+    def remoteProtocol = "http"
+
+    // if "protocol" is defined in properties file, use that
+    if (props.getProperty("webapp.protocol") != null) {
+        remoteProtocol = props.getProperty("webapp.protocol")
+    }
+
+    // change these to match your Tomcat host and tomcat-users config
+    remote {
+        hostname = remoteHostName
+        protocol = remoteProtocol
+        username = props.getProperty("webapp.manager")
+        password = props.getProperty("webapp.password")
+        port = remotePort
+    }
+}
+
+cargoStartLocal.dependsOn war
+cargoRunLocal.dependsOn war
+cargoRedeployLocal.dependsOn war
+cargoDeployRemote.dependsOn war
+cargoRedeployRemote.dependsOn war
+
+// gets the hostname from the old intermine parameter, e.g. http://localhost:8080 > localhost
+String getServerName(String deployUrl) {
+    // chop off protocol
+    if (deployUrl != null && deployUrl.indexOf("/") >= 0) {
+        // https:// or http://
+        deployUrl = deployUrl.substring(deployUrl.indexOf("/") + 2, deployUrl.length())
+    }
+
+    // chop off port
+    if (deployUrl != null && deployUrl.contains(":")) {
+        // localhost:8080
+        String[] bits = deployUrl.split(":")
+        deployUrl = bits[0]
+    }
+
+    return deployUrl
+}
+
+task blueGenesStart(type: JavaExec) {
+    classpath = configurations.onlyRunTime
+    main = "bluegenes.core"
+    //println "Loading blue genes for '" + props.getProperty("project.title") + "' at '" + props.getProperty("webapp.baseurl") + "/" + props.getProperty("webapp.path") + "'"
+
+    //:bluegenes-default-service-root "http://beta.flymine.org/beta"
+    environment("bluegenes-default-service-root", props.getProperty("webapp.baseurl") + "/" + props.getProperty("webapp.path"))
+    // FlyMine Beta
+    environment("bluegenes-default-mine-name", props.getProperty("project.title"))
+    environment("bluegenes-jar-version", System.getProperty("blueGenesVersion"))
+    // absolute path to npm tools, e.g. /intermine/tools/node_modules/
+    environment("bluegenes-tool-path", props.getProperty("bluegenes.toolLocation"))
+    println "Loading tools from " + props.getProperty("bluegenes.toolLocation")
+}

@@ -1,6 +1,7 @@
 rootProject.name = 'flymine'
 
-include ':dbmodel',':webapp'
+include ':dbmodel',':webapp',':webservices'
 
 project(':dbmodel').projectDir = new File(settingsDir, './dbmodel')
 project(':webapp').projectDir = new File(settingsDir, './webapp')
+project(':webservices').projectDir = new File(settingsDir, './webservices')
