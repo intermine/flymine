@@ -51,6 +51,11 @@ task warWebApp(type: War) {
     webInf { from "${mergePropsDir}" }
 }
 
+task copyWebappContent(type: Copy) {
+    from "src/main/webapp/"
+    into "${explodedWebAppDir}"
+}
+
 // read in mine.properties to get the contextPath
 def props = new Properties()
 file(minePropertyFile).withInputStream { props.load(it) }
