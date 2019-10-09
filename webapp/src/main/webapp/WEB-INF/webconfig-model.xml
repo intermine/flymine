@@ -524,7 +524,7 @@
 
   <class className="org.intermine.model.bio.Sequence">
     <fields>
-      <fieldconfig fieldExpr="residues" fieldExporter="org.intermine.bio.web.export.ResidueFieldExporter"
+      <fieldconfig fieldExpr="residues" fieldExporter="org.intermine.bio.web.logic.export.ResidueFieldExporter"
                    sectionOnRight="true" sectionTitle="Residues" openByDefault="true"
                    showInSummary="false" showInResults="false" showInInlineCollection="false"/>
       <fieldconfig fieldExpr="length"/>
