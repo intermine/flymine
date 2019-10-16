@@ -27,7 +27,7 @@ dependencies {
     compile group: "org.intermine", name: "bio-core", version: System.getProperty("bioVersion"), transitive: false
     compile group: "org.intermine", name: "bio-webcore", version: System.getProperty("imVersion"), transitive: false //otherwise bio-model will be included in the classpath 
     compile group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")
-    compile group: "org.intermine", name: "intermine-webcore", version: System.getProperty("imVersion"), classifier: "classes"
+    compile group: "org.intermine", name: "intermine-webcore", version: System.getProperty("imVersion")
     webservices group: "org.intermine", name: "bio-webservices", version: System.getProperty("imVersion"),  transitive: false
     onlyRunTime group: 'org.intermine', name: 'bluegenes', version: System.getProperty("blueGenesVersion")
 }
@@ -89,7 +89,7 @@ cargo {
     // change this to the Tomcat root of your choice
     deployable {
         //Tomcat supports nested context paths.
-        //e.g. biotestmine#service.war will be made available under the biotestmine/service context
+        //e.g. flymine#service.war will be made available under the biotestmine/service context
         //if we put the hash character the TomcatManager fails, so for now leave the slash
         context = props.getProperty("webapp.path") + "/service"
     }
