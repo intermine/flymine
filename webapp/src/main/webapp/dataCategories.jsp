@@ -26,8 +26,8 @@
   <tr>
     <td class="leftcol"><h2><p>Genes</p></h2></td>
     <td> <i>Drosophila</i> </td>
-    <td> Genome annotation for D. melanogaster (R6.29), D. ananassae (R1.06), D. erecta (R1.05), D. grimshawi (R1.05), D. mojavensis (R1.04), D. persimilis (R1.3), D. pseudoobscura (R3.04), D. sechellia (R1.3), D. simulans (R2.02), D. virilis (R1.07), D. willistoni (R1.05) and D. yakuba (R1.05).</td>
-    <td><a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_04</td>
+    <td> Genome annotation for D. melanogaster (R6.31), D. ananassae (R1.06), D. erecta (R1.05), D. grimshawi (R1.05), D. mojavensis (R1.04), D. persimilis (R1.3), D. pseudoobscura (R3.04), D. sechellia (R1.3), D. simulans (R2.02), D. virilis (R1.07), D. willistoni (R1.05) and D. yakuba (R1.05).</td>
+    <td><a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_06</td>
     <td> Gramates et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27799470 " target="_new" class="extlink">PubMed: 27799470 </a></td>
     <td> <html:link action="/dataCategories" anchor="note1" title="${note1}">#1</html:link></td>
   </tr>
@@ -84,7 +84,7 @@
         <p><i>S. cerevisiae</i></p>
     </td>
     <td>Orthologue and paralogue relationships between these organisms</td>
-    <td><a href="https://www.ncbi.nlm.nih.gov/homologene" target="_new" class="extlink">Homologene</a> - 9th September 2019</td>
+    <td><a href="https://www.ncbi.nlm.nih.gov/homologene" target="_new" class="extlink">Homologene</a> - 21st January 2020</td>
     <td>Agarwala et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/26615191" target="_new" class="extlink">PubMed: 26615191</a></td>
     <td> &nbsp; </td>
   </tr>
@@ -102,7 +102,7 @@
 
 
     <td> Protein annotation</td>
-    <td> <a href="http://www.uniprot.org/" target="_new" class="extlink">UniProt</a> - Release 2019_07</td>
+    <td> <a href="http://www.uniprot.org/" target="_new" class="extlink">UniProt</a> - Release 2019_11</td>
     <td> UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27899622 " target="_new" class="extlink">PubMed: 27899622</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -114,7 +114,7 @@
         <p><i>C. elegans</i></p>
     </td>
     <td> Protein family and domain assignments to proteins</td>
-    <td> <a href="http://www.ebi.ac.uk/interpro" target="_new" class="extlink">InterPro</a>9th September 2019</td>
+    <td> <a href="http://www.ebi.ac.uk/interpro" target="_new" class="extlink">InterPro</a>Version77; 14th November 2019</td>
     <td> Finn et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27899635 " target="_new" class="extlink">PubMed: 27899635</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -138,7 +138,7 @@
         <p><i>S. cerevisiae</i></p>
     </td>
     <td> Molecular interaction datasets </td>
-    <td> <a href="http://www.ebi.ac.uk/intact" target="_new" class="extlink">IntAct</a>30th August 2019</td>
+    <td> <a href="http://www.ebi.ac.uk/intact" target="_new" class="extlink">IntAct</a>2019-12-18 version 4.2.12</td>
     <td> Orchard et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/24234451" target="_new" class="extlink">PubMed:24234451</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -149,7 +149,7 @@
        <p><i>S. cerevisiae</i></p>
     </td>
     <td> Interactions from the BioGRID</td>
-    <td> <a href="http://www.thebiogrid.org" target="_new" class="extlink">BioGRID</a> - Version 3.5.175</td>
+    <td> <a href="http://www.thebiogrid.org" target="_new" class="extlink">BioGRID</a> - Version 3.5.181</td>
     <td> Chatr-Aryamontri et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27980099" target="_new" class="extlink">PubMed:27980099</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -164,7 +164,7 @@
     <td rowspan="2" class="leftcol"><p> <h2>Gene Ontology</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
     <td> GO annotations </td>
-    <td> <a href="http://www.geneontology.org" target="_new" class="extlink">Gene Ontology Site</a> - 9th September 2019</td>
+    <td> <a href="http://www.geneontology.org" target="_new" class="extlink">Gene Ontology Site</a> - 21st January 2020</td>
     <td> Gene Ontology Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/10802651" target="_new" class="extlink">PubMed:10802651</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -172,7 +172,7 @@
     <tr>
     <td> <i>D. melanogaster</i></td>
     <td> InterPro domains to GO annotations </td>
-    <td> <a href="http://www.ebi.ac.uk/interpro" target="_new" class="extlink">InterPro</a> (from <a href="http://www.geneontology.org" target="_new" class="extlink">Gene Ontology Site</a>) - 9th September 2019
+    <td> <a href="http://www.ebi.ac.uk/interpro" target="_new" class="extlink">InterPro</a> (from <a href="http://www.geneontology.org" target="_new" class="extlink">Gene Ontology Site</a>) - 21st January 2020
       </td>
     <td> Gene Ontology Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/10802651" target="_new" class="extlink">PubMed:10802651</a>, Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_new" class="extlink">PubMed: 17202162</a></td>
     <td> &nbsp;</td>
@@ -214,7 +214,7 @@
   <tr>
     <td> <i>D. melanogaster</i> </td>
     <td> Genome-wide RNA_seq Expression Data: raw data produced by modENCODE analysed by FlyBase</td>
-    <td> <a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_04</td>
+    <td> <a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_06</td>
     <td> Gelbart and Emmert - 2010<a href="http://flybase.org/reports/FBrf0212041.html" target="_new" class="extlink">FlyBase Report</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -223,7 +223,7 @@
     <td rowspan="3" class="leftcol"><p><h2>Regulation</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
     <td> Transcriptional cis-regulatory modules (CRMs)</td>
-    <td> <a href="http://redfly.ccr.buffalo.edu" target="_new" class="extlink">REDfly</a> - 5.6 September 2019</td>
+    <td> <a href="http://redfly.ccr.buffalo.edu" target="_new" class="extlink">REDfly</a> - 6.0 January 2020</td>
     <td> Gallo et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/20965965" target="_new" class="extlink">PubMed: 20965965</a></td>
     <td>  &nbsp;</td>
   </tr>
@@ -231,7 +231,7 @@
   <tr>
     <td> <i>D. melanogaster</i> </td>
     <td> Transcription factor binding sites</td>
-    <td> <a href="http://www.flyreg.org" target="_new" class="extlink">REDfly</a> - 5.6 September 2019</td>
+    <td> <a href="http://www.flyreg.org" target="_new" class="extlink">REDfly</a> - 6.0 January 2020</td>
     <td> Bergman et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/20965965" target="_new" class="extlink">PubMed: 20965965</a></td>
     <td>  &nbsp; </td>
   </tr>
@@ -239,7 +239,7 @@
   <tr>
     <td> <i>D. melanogaster</i> </td>
     <td> Enhancers</td>
-    <td> <a href="http://www.flybase.org" target="_new" class="extlink">FlyBase</a> - Version FB2019_04</td>
+    <td> <a href="http://www.flybase.org" target="_new" class="extlink">FlyBase</a> - Version FB2019_06</td>
     <td> Gramates et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27799470" target="_new" class="extlink">PubMed: 27799470</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -248,7 +248,7 @@
     <td rowspan="2" class="leftcol"><p> <h2>Phenotypes</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
     <td> Alleles and phenotypes</td>
-    <td> <a href="http://www.flybase.org" target="_new" class="extlink">FlyBase</a> - Version FB2019_04</td>
+    <td> <a href="http://www.flybase.org" target="_new" class="extlink">FlyBase</a> - Version FB2019_06</td>
     <td> Gramates et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27799470" target="_new" class="extlink">PubMed: 27799470</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -272,7 +272,7 @@
   <tr>
     <td> <p><i>D. melanogaster</i></p></td>
     <td> Pathway information and the genes involved in them, inferred through orthologues from Human curated pathways</td>
-    <td> <a href="http://www.reactome.org/" target="_new" class="extlink">Reactome</a> - version 70, September 2019</td>
+    <td> <a href="http://www.reactome.org/" target="_new" class="extlink">Reactome</a> - version 71, December 2019</td>
     <td>Fabregat et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/29145629" target="_new" class="extlink">PubMed: 29145629</a></td>
     <td> &nbsp;</td>
     <td>&nbsp;</td>
@@ -303,7 +303,7 @@
     <td rowspan="5" class="leftcol"><p><h2>Resources</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
     <td> <a href="http://www.drosdel.org.uk" target="_new" class="extlink">DrosDel</a> artificial deletions</td>
-    <td> <a href="http://www.flybase.org" target="_new" class="extlink">FlyBase </a> - Version FB2019_04</td>
+    <td> <a href="http://www.flybase.org" target="_new" class="extlink">FlyBase </a> - Version FB2019_06</td>
     <td> Ryder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/15238529" target="_new" class="extlink">PubMed: 15238529</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -311,7 +311,7 @@
   <tr>
     <td> <i>D. melanogaster</i> </td>
     <td> Insertions (including DrosDel and Exelixis) </td>
-    <td> <a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_04</td>
+    <td> <a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_06</td>
     <td> Gramates et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27799470" target="_new" class="extlink">PubMed: 27799470</a></td>
     <td>&nbsp;</td>
   </tr>
@@ -344,7 +344,7 @@
     <td rowspan="2" class="leftcol"><p><h2>Publications</h2></p></td>
     <td> <i>Drosophila</i> </td>
     <td> Gene versus publications</td>
-    <td><a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_04</td>
+    <td><a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_06</td>
     <td> Gramates et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27799470" target="_new" class="extlink">PubMed: 27799470</a></td>
     <td> &nbsp;</td>
   </tr>
@@ -354,7 +354,7 @@
        <p><i>C. elegans</i></p>
     </td>
     <td> Gene versus publications</td>
-    <td> <a href="http://www.ncbi.nlm.nih.gov" target="_new" class="extlink">NCBI</a> - September 2019</td>
+    <td> <a href="http://www.ncbi.nlm.nih.gov" target="_new" class="extlink">NCBI</a> - January 2020</td>
     <td> &nbsp;</td>
     <td> &nbsp;</td>
   </tr>
