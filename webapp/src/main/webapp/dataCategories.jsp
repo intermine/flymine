@@ -37,7 +37,7 @@
     <td rowspan="4"  class="leftcol"><p><h2>Homology</h2></p></td>
     <td><i>Drosophila</i></td>
     <td>Orthologues and paralogues between the 12 <i>Drosophila</i> genomes.</td>
-    <td><a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2018_03</td>
+    <td><a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_06</td>
     <td>Gramates et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27799470 " target="_new" class="extlink">PubMed: 27799470</a></td>
     <td> &nbsp; </td>
   </tr>
@@ -69,7 +69,7 @@
        <p><i>S. cerevisiae</i></p>
     </td>
      <td>Orthologue and paralogue relationships between these organisms</td>
-    <td><a href="http://www.pantherdb.org" target="_new" class="extlink">Panther</a> - 14.1</td>
+    <td><a href="http://www.pantherdb.org" target="_new" class="extlink">Panther</a> - December 2019 - version 14.1</td>
     <td>Mi et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27899595 " target="_new" class="extlink">PubMed: 27899595</a></td>
     <td> &nbsp; </td>
   </tr>
@@ -223,7 +223,7 @@
     <td rowspan="3" class="leftcol"><p><h2>Regulation</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
     <td> Transcriptional cis-regulatory modules (CRMs)</td>
-    <td> <a href="http://redfly.ccr.buffalo.edu" target="_new" class="extlink">REDfly</a> - 6.0 January 2020</td>
+    <td> <a href="http://redfly.ccr.buffalo.edu" target="_new" class="extlink">REDfly</a> - version 6.0, January 2020</td>
     <td> Gallo et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/20965965" target="_new" class="extlink">PubMed: 20965965</a></td>
     <td>  &nbsp;</td>
   </tr>
@@ -231,7 +231,7 @@
   <tr>
     <td> <i>D. melanogaster</i> </td>
     <td> Transcription factor binding sites</td>
-    <td> <a href="http://www.flyreg.org" target="_new" class="extlink">REDfly</a> - 6.0 January 2020</td>
+    <td> <a href="http://www.flyreg.org" target="_new" class="extlink">REDfly</a> - version 6.0, January 2020</td>
     <td> Bergman et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/20965965" target="_new" class="extlink">PubMed: 20965965</a></td>
     <td>  &nbsp; </td>
   </tr>
@@ -291,7 +291,7 @@
 -->
 
   <tr>
-    <td rowspan="1" class="leftcol"><p><h2>Diseases</h2></p></td>
+    <td class="leftcol"><p><h2>Diseases</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
     <td> Human disease data set</td>
     <td> <a href="http://omim.org" target="_new" class="extlink">OMIM</a> - April 2019</td>
