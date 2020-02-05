@@ -118,7 +118,7 @@
     <td> Finn et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27899635 " target="_new" class="extlink">PubMed: 27899635</a></td>
     <td> &nbsp;</td>
   </tr>
-  
+
 
  <!--
   <tr>
@@ -261,7 +261,7 @@
     <td> &nbsp;</td>
   </tr>
   <tr>
-    <td rowspan="3" class="leftcol"><p> <h2>Pathways</h2></p></td>
+    <td rowspan="2" class="leftcol"><p> <h2>Pathways</h2></p></td>
     <td> <p><i>D. melanogaster</i></p></td>
     <td> Curated pathway information and the genes involved in them</td>
     <td> <a href="http://www.genome.jp/kegg/" target="_new" class="extlink">KEGG</a> - Release 58, 31 May 2011</td>
@@ -274,7 +274,6 @@
     <td> Pathway information and the genes involved in them, inferred through orthologues from Human curated pathways</td>
     <td> <a href="http://www.reactome.org/" target="_new" class="extlink">Reactome</a> - version 71, December 2019</td>
     <td>Fabregat et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/29145629" target="_new" class="extlink">PubMed: 29145629</a></td>
-    <td> &nbsp;</td>
     <td>&nbsp;</td>
   </tr>
 
