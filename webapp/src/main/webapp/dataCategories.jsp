@@ -302,7 +302,7 @@
   <tr>
     <td rowspan="5" class="leftcol"><p><h2>Resources</h2></p></td>
     <td> <i>D. melanogaster</i> </td>
-    <td> <a href="http://www.drosdel.org.uk" target="_new" class="extlink">DrosDel</a> artificial deletions</td>
+    <td> Artificial deletions</td>
     <td> <a href="http://www.flybase.org" target="_new" class="extlink">FlyBase </a> - Version FB2019_06</td>
     <td> Ryder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/15238529" target="_new" class="extlink">PubMed: 15238529</a></td>
     <td> &nbsp;</td>
@@ -310,7 +310,7 @@
 
   <tr>
     <td> <i>D. melanogaster</i> </td>
-    <td> Insertions (including DrosDel and Exelixis) </td>
+    <td> Insertions </td>
     <td> <a href="http://www.flybase.org" target="_new" class="extlink">Flybase</a> - Version FB2019_06</td>
     <td> Gramates et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/27799470" target="_new" class="extlink">PubMed: 27799470</a></td>
     <td>&nbsp;</td>
