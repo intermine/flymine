@@ -658,6 +658,12 @@
                      placement="summary"
                      types="ProteinStructure"/>
 
+    <reportdisplayer javaClass="org.intermine.bio.web.displayer.JBrowseDisplayer"
+                     jspName="model/jbrowseDisplayer.jsp"
+                     replacesFields=""
+                     placement="Genes"
+                     types="SequenceFeature"/>
+
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.OverlappingFeaturesDisplayer"
                      jspName="model/overlappingFeaturesDisplayer.jsp"
                      replacesFields="overlappingFeatures"
