@@ -909,7 +909,7 @@
                                  enrich="goAnnotation.ontologyTerm.parents.name"
                                  enrichIdentifier="goAnnotation.ontologyTerm.parents.identifier"
                                  constraints="goAnnotation.ontologyTerm.parents.namespace=[Ontology],organism.name=[list],
-                                              primaryIdentifier != null, goAnnotation.qualifier = null,
+                                              primaryIdentifier != null,
                                               goAnnotation.ontologyTerm.parents.identifier != go:0008150,
                                               goAnnotation.ontologyTerm.parents.identifier != go:0003674,
                                               goAnnotation.ontologyTerm.parents.identifier != go:0005575"
