@@ -1,0 +1,44 @@
+{"Gene" [
+    {:category "Gene Ontology", :children [
+        {:label "GO Annotation", :value "goAnnotation", :type "class", :collapse nil}
+        {:label "Gene --> GO terms", :value "Gene_GO", :type "template", :collapse nil}
+        {:label "Gene --> GO terms + Parents of those terms", :value "Gene_GOAll", :type "template", :collapse nil}]}
+    {:category "Genomics", :children [
+        {:label "JBrowse 2 Genome Browser", :value "bluegenesJBrowse2Tool", :type "tool", :collapse nil}
+        {:label "Exons", :value "exons", :type "class", :collapse nil}
+        {:label "Introns", :value "introns", :type "class", :collapse nil}
+        {:label "Transcripts", :value "transcripts", :type "class", :collapse nil}
+        {:label "UTRs", :value "UTRs", :type "class", :collapse nil}
+        {:label "Downstream Intergenic Region", :value "downstreamIntergenicRegion", :type "class", :collapse nil}
+        {:label "Upstream Intergenic Region", :value "upstreamIntergenicRegion", :type "class", :collapse nil}
+        {:label "Gene --> Adjacent genes (upstream and downstream) + chromosome locations", :value "Gene_AdjacentGenesLocations", :type "template", :collapse nil}]}
+    {:category "Proteins", :children [
+        {:label "Proteins", :value "proteins", :type "class", :collapse nil}
+        {:label "BlueGenes Protein Visualizer", :value "bluegenesProteinVisualizer", :type "tool", :collapse nil}
+        {:label "BlueGenes MSA Viewer", :value "bluegenesMSAViewer", :type "tool", :collapse nil}
+        {:label "Gene --> Protein + Domains", :value "Gene_proteindomain", :type "template", :collapse nil}]}
+    {:category "Homology", :children [
+        {:label "Homologues", :value "homologues", :type "class", :collapse nil}
+        {:label "Gene --> Orthologues in other Drosophila species", :value "Gene_DrosophilaOrthologues", :type "template", :collapse nil}]}
+    {:category "Expression", :children [
+        {:label "Micro Array Results", :value "microArrayResults", :type "class", :collapse nil}
+        {:label "Bluegenes Tissue Expression Visualizer", :value "bluegenesTissueExpressionVisualizer", :type "tool", :collapse nil}
+        {:label "Rna Seq Results", :value "rnaSeqResults", :type "class", :collapse nil}
+        {:label "mRNA Expression Results", :value "mRNAExpressionResults", :type "class", :collapse nil}
+        {:label "Gene --> BDGP in situ data", :value "Gene_BDGP", :type "template", :collapse nil}
+        {:label "Gene --> FlyFish + BDGP in situ data", :value "Gene_BDGPFlyFish", :type "template", :collapse nil}
+        {:label "Gene --> FlyFish data", :value "Gene_FlyFish", :type "template", :collapse nil}]}
+    {:category "Interactions", :children [
+        {:label "Interactions", :value "interactions", :type "class", :collapse nil}
+        {:label "Cytoscape Interaction Network", :value "bluegenesToolCytoscape", :type "tool", :collapse nil}
+        {:label "microRNA (miRNA) --> Targets genes", :value "miRNA_Targets", :type "template", :collapse nil}
+        {:label "Transcription factor --> TF binding sites + Binding site sequence", :value "Transcriptionfactor_TFBindingSiteGene", :type "template", :collapse nil}
+        {:label "TranscriptionFactor --> Genes that have binding sites for this factor", :value "TranscriptionFactor_Genes", :type "template", :collapse nil}]}
+    {:category "Pathways", :children [
+        {:label "Pathways", :value "pathways", :type "class", :collapse nil}]}
+    {:category "Disease", :children [
+        {:label "Diseases", :value "diseases", :type "class", :collapse nil}
+        {:label "Alleles", :value "alleles", :type "class", :collapse nil}
+        {:label "Gene --> Human disease gene and OMIM disease", :value "Gene_disease", :type "template", :collapse nil}
+        {:label "RNAi Results", :value "rnaiResults", :type "class", :collapse nil}
+        {:label "Gene --> RNAi phenotypes", :value "Gene_RNAi", :type "template", :collapse nil}]}]}
